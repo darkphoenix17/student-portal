@@ -12,7 +12,7 @@ import Header from "./Student/components/Header";
 import Footer from "./Student/components/Footer";
 
 import Dashboard from "./Student/Dashboard";
-import AllJobs from "./Student/AllJobs";
+import AllJobs from "./pages/AllJobs";
 import AppliedJobs from "./Student/AppliedJobs";
 import JobProfile from "./components/JobProfile";
 import EditUser from "./Student/EditUser";

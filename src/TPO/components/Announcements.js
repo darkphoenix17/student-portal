@@ -1,6 +1,5 @@
 import React from "react";
 import { BASE_URL } from "../../CONSTANTS";
-import "../../css/styles.css";
 import AnnouncementForm from "./AnnouncementForm";
 import NotificationCard from "../../components/NotificationCards";
 
@@ -49,15 +48,19 @@ class Announcement extends React.Component {
     return (
       <div
         className="notification__section"
-        style={{ backgroundColor: "white", overflowY: "scroll" }}
+        style={{ backgroundColor: "white" }}
       >
         <h3 className="notification__heading">All Public Announcements</h3>
-        <div className="notification__container">{allAnnouncements}</div>
-        <div className="form__mail">
-          <AnnouncementForm
-            type={"announcement"}
-            button={"Create New Announcement"}
-          />
+        <div className="notification__container tpo__announcement__container">
+          <div className="tpo__announcement__card__container">
+            {allAnnouncements}
+          </div>
+          <div className="form__mail">
+            <AnnouncementForm
+              type={"announcement"}
+              button={"Create New Announcement"}
+            />
+          </div>
         </div>
       </div>
     );

@@ -16,9 +16,9 @@ import JobProfile from "./TPO/JobProfile";
 import StudentProfile from "./TPO/StudentProfile";
 import AllStudents from "./TPO/AllStudents";
 import Queries from "./TPO/Queries";
-import AllJobs from "./TPO/AllJobs";
-import PendingApproval from './TPO/PendingApproval';
-import FilledForm from './TPO/components/FilledForm';
+import AllJobs from "./pages/AllJobs";
+import PendingApproval from "./TPO/PendingApproval";
+import FilledForm from "./TPO/components/FilledForm";
 
 function TPOApp() {
   const location = useLocation();
@@ -51,12 +51,12 @@ function TPOApp() {
       nav: "all-students",
     },
     {
-      name: 'Queries',
-      nav: 'queries',
+      name: "Queries",
+      nav: "queries",
     },
     {
-      name: 'Pending Approvals',
-      nav: 'pending-approvals',
+      name: "Pending Approvals",
+      nav: "pending-approvals",
     },
   ];
 
