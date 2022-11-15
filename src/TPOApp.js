@@ -19,6 +19,7 @@ import Queries from "./TPO/Queries";
 import AllJobs from "./pages/AllJobs";
 import PendingApproval from "./TPO/PendingApproval";
 import FilledForm from "./TPO/components/FilledForm";
+import ErrorPage from "./components/ErrorPage";
 
 function TPOApp() {
   const location = useLocation();
@@ -99,6 +100,10 @@ function TPOApp() {
 
         <Route exact path="/login">
           <Login setToken={setToken} />
+        </Route>
+
+        <Route exact path="*">
+          <ErrorPage />
         </Route>
         {/* <Route exact path="/logout">
           <Logout />

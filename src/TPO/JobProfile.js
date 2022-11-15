@@ -136,7 +136,7 @@ class JobProfileTpo extends Component {
     // console.log(jobId);
     // this.setState({id:ret});
 
-    url = url + "/student";
+    url = url + "/students";
 
     getAppliedStudents(url).then(val => {
       this.setState({

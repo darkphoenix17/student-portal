@@ -15,6 +15,7 @@ import Dashboard from "./Student/Dashboard";
 import AllJobs from "./pages/AllJobs";
 import AppliedJobs from "./Student/AppliedJobs";
 import JobProfile from "./components/JobProfile";
+import ErrorPage from "./components/ErrorPage";
 import EditUser from "./Student/EditUser";
 
 import useToken from "./components/App/useToken";
@@ -70,9 +71,9 @@ function StudentApp() {
         <Route exact path="/login">
           <Login setToken={setToken} />
         </Route>
-        {/* <Route exact path="/logout">
-          <Logout />
-        </Route> */}
+        <Route exact path="*">
+          <ErrorPage />
+        </Route>
       </Switch>
       <Footer />
     </>
